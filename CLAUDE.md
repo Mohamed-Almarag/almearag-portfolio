@@ -17,7 +17,11 @@ Personal portfolio of Mohamed Almearag. A single, statically rendered page.
 pnpm dev
 pnpm build
 pnpm lint
+pnpm typecheck
+pnpm format
 ```
+
+Lefthook runs ESLint and Prettier on staged files and commitlint on commit messages. CI runs lint, format check, typecheck, and build.
 
 ## Structure
 
