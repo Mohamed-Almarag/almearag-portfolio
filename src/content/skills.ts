@@ -1,0 +1,98 @@
+import type { SkillGroup } from "./types";
+
+export const skills: SkillGroup[] = [
+  {
+    label: "Frameworks & Libraries",
+    items: [
+      "Vue.js (2/3)",
+      "Nuxt.js (2-4)",
+      "React",
+      "Next.js",
+      "Vite",
+      "Pinia",
+      "Vuex",
+      "Zustand",
+      "TanStack Query",
+    ],
+  },
+  {
+    label: "Languages",
+    items: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "Sass"],
+  },
+  {
+    label: "UI & Styling",
+    items: [
+      "Tailwind CSS",
+      "Nuxt UI",
+      "shadcn/ui",
+      "Vuetify",
+      "PrimeVue",
+      "Element Plus",
+      "Element UI",
+      "BootstrapVue",
+      "Bootstrap",
+    ],
+  },
+  {
+    label: "Rendering & Performance",
+    items: [
+      "SSR",
+      "SSG",
+      "ISR",
+      "CSR",
+      "Core Web Vitals",
+      "Web Performance",
+      "SEO",
+      "Caching",
+      "Image Optimization",
+    ],
+  },
+  {
+    label: "Integration",
+    items: [
+      "REST APIs",
+      "WebSockets (Pusher)",
+      "Firebase (FCM)",
+      "WebRTC",
+      "Tap Payments",
+      "i18n & RTL",
+      "Zod",
+      "vee-validate",
+    ],
+  },
+  {
+    label: "Engineering & Quality",
+    items: [
+      "Clean Architecture",
+      "Feature-Based Architecture",
+      "RBAC",
+      "HTTP-only Cookie Auth",
+      "Server-Side Proxy",
+      "Accessibility",
+      "Vitest",
+      "Jest",
+      "Sentry",
+    ],
+  },
+  {
+    label: "AI-Assisted Development",
+    items: ["Claude", "Cursor", "Codex"],
+  },
+  {
+    label: "Tools & Collaboration",
+    items: [
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Bitbucket",
+      "CI/CD",
+      "Lefthook",
+      "Vercel",
+      "Jira",
+      "Trello",
+      "Asana",
+      "Slack",
+      "Microsoft Teams",
+    ],
+  },
+];

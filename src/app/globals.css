@@ -3,16 +3,45 @@
 :root {
   --background: #0a0a0a;
   --foreground: #ededed;
+  --muted: #a3a3a3;
+  --border: #262626;
+  --primary: #116e73;
+  --accent: #1fc6d1;
+  color-scheme: dark;
+}
+
+:root.light {
+  --background: #fafafa;
+  --foreground: #171717;
+  --muted: #525252;
+  --border: #e5e5e5;
+  --primary: #116e73;
+  --accent: #116e73;
+  color-scheme: light;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
+@layer base {
+  html {
+    scroll-padding-top: 5rem;
+  }
+
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
 }
