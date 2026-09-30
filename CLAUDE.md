@@ -7,7 +7,7 @@ Personal portfolio of Mohamed Almearag. A single, statically rendered page.
 ## Stack
 
 - Next.js 16 (App Router), React 19, TypeScript (strict)
-- Tailwind CSS 4, shadcn/ui
+- Tailwind CSS 4, no component library
 - pnpm
 - Vercel
 
@@ -30,8 +30,8 @@ src/
   app/                  layout, page, robots, sitemap, opengraph-image
   components/
     sections/           one per CV section, in the CV's order
-    layout/             header, footer, theme-toggle
-    ui/                 shadcn/ui primitives and small shared pieces
+    layout/             AppHeader, AppNav, AppFooter, ThemeToggle
+    ui/                 AppContainer, AppSection, Icon, ExternalLink
   content/              CV content as typed data
   lib/                  site config and utilities
 ```
@@ -47,7 +47,7 @@ src/
 ## Content
 
 - The CV is the only source of truth. Copy it verbatim: no rewording, no additions, no omissions.
-- The phone number is never shown.
+- The phone number appears only inside the WhatsApp link, never as visible text.
 - American spelling. No em dashes.
 
 ## Code
@@ -55,7 +55,8 @@ src/
 - Comments only when the reason is not obvious from the code. One or two lines at most.
 - No JSDoc on self-explanatory code, no divider comments, no commented-out code, no TODOs left behind.
 - No placeholder text and no emojis in code or UI.
-- Files in kebab-case, components in PascalCase, named exports except where Next.js requires a default export.
+- Component files in PascalCase matching the component (`AppHeader.tsx`). Other files in kebab-case. Named exports except where Next.js requires a default export.
+- Never name a component after an HTML element (`Header`, `Footer`, `Nav`); prefix it with `App` (`AppHeader`, `AppNav`, `AppFooter`, `AppContainer`, `AppSection`).
 - Keep components small. No abstraction until it is used at least twice.
 - Semantic HTML, visible focus states, full keyboard support, WCAG AA contrast.
 
