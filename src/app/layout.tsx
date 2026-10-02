@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import { AppFooter } from "@/components/layout/AppFooter";
 import { AppHeader } from "@/components/layout/AppHeader";
+import { profile } from "@/content/profile";
+import { siteDescription, siteTitle, siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -9,9 +11,33 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
+const [firstName, lastName] = profile.name.split(" ");
+
 export const metadata: Metadata = {
-  title: "Mohamed Almearag | Senior Frontend Engineer",
-  description: "Senior Frontend Engineer. Vue.js | Nuxt.js | React | Next.js",
+  metadataBase: new URL(siteUrl),
+  title: siteTitle,
+  description: siteDescription,
+  alternates: { canonical: "/" },
+  authors: [{ name: profile.name, url: siteUrl }],
+  openGraph: {
+    type: "profile",
+    firstName,
+    lastName,
+    title: siteTitle,
+    description: siteDescription,
+    url: "/",
+    siteName: profile.name,
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0a0a0a",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
