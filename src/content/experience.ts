@@ -9,6 +9,7 @@ export const experience: Role[] = [
     products: [
       "Rivals (bidding & tenders)",
       "Doworkss (freelancing marketplace)",
+      "Your Doctor (healthcare, React & Next.js)",
     ],
     highlights: [
       "Migrated Doworkss from Nuxt 2 to Nuxt 4 with a feature-based architecture replacing the previous flat structure, removing redundant dependencies to reduce bundle size and maintenance cost.",

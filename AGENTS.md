@@ -47,7 +47,7 @@ src/
 ## Architecture
 
 - Server Components by default. `"use client"` only on leaf components that need interaction.
-- Sections mirror the CV: hero, summary, experience, freelance, product, skills, education, languages.
+- Sections mirror the CV: hero, summary, experience, freelance, products, skills, education, languages.
 - All copy lives in `src/content/`. Section components receive data and render it; no hardcoded text inside them.
 - One page with anchor sections. No route handlers for the page's own data, no state library, no CMS.
 - Theme is dark by default with a toggle to light. Not persisted, no system detection.

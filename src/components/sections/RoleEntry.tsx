@@ -16,11 +16,13 @@ export function RoleEntry({ role }: { role: Role }) {
           {role.products.join(" | ")}
         </p>
       )}
-      <ul className="mt-4 list-disc space-y-2 pl-5 leading-relaxed text-muted marker:text-accent">
-        {role.highlights.map((highlight) => (
-          <li key={highlight}>{highlight}</li>
-        ))}
-      </ul>
+      {role.highlights && (
+        <ul className="mt-4 list-disc space-y-2 pl-5 leading-relaxed text-muted marker:text-accent">
+          {role.highlights.map((highlight) => (
+            <li key={highlight}>{highlight}</li>
+          ))}
+        </ul>
+      )}
     </article>
   );
 }

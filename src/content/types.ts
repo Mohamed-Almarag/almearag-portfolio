@@ -9,14 +9,16 @@ export type Role = {
   location: string;
   period: string;
   products?: string[];
-  highlights: string[];
+  highlights?: string[];
 };
+
+export type Highlight = string | (string | Link)[];
 
 export type Product = {
   name: string;
   stack: string[];
-  links: { demo: string; docs: string };
-  highlights: string[];
+  links: Link[];
+  highlights: Highlight[];
 };
 
 export type SkillGroup = {

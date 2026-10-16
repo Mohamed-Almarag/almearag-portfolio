@@ -3,7 +3,7 @@ import { Experience } from "@/components/sections/Experience";
 import { Freelance } from "@/components/sections/Freelance";
 import { Hero } from "@/components/sections/Hero";
 import { Languages } from "@/components/sections/Languages";
-import { Product } from "@/components/sections/Product";
+import { Products } from "@/components/sections/Products";
 import { Skills } from "@/components/sections/Skills";
 import { Summary } from "@/components/sections/Summary";
 import { AppContainer } from "@/components/ui/AppContainer";
@@ -23,7 +23,7 @@ export default function Home() {
         <Summary />
         <Experience />
         <Freelance />
-        <Product />
+        <Products />
         <Skills />
         <div className="grid gap-14 sm:grid-cols-2">
           <Education />
