@@ -5,6 +5,11 @@ export const sections: Section[] = [
   { id: "experience", title: "Experience", inNav: true },
   { id: "freelance", title: "Freelance & Part-Time Experience", inNav: false },
   { id: "products", title: "Open Source & Products", inNav: true },
+  {
+    id: "contributions",
+    title: "Open-Source Contributions",
+    inNav: false,
+  },
   { id: "skills", title: "Skills", inNav: true },
   { id: "education", title: "Education", inNav: true },
   { id: "languages", title: "Languages", inNav: false },

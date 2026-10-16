@@ -1,4 +1,5 @@
 import { Education } from "@/components/sections/Education";
+import { Contributions } from "@/components/sections/Contributions";
 import { Experience } from "@/components/sections/Experience";
 import { Freelance } from "@/components/sections/Freelance";
 import { Hero } from "@/components/sections/Hero";
@@ -24,6 +25,7 @@ export default function Home() {
         <Experience />
         <Freelance />
         <Products />
+        <Contributions />
         <Skills />
         <div className="grid gap-14 sm:grid-cols-2">
           <Education />
