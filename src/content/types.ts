@@ -9,7 +9,7 @@ export type Role = {
   location: string;
   period: string;
   products?: string[];
-  highlights?: string[];
+  highlights: string[];
 };
 
 export type Highlight = string | (string | Link)[];

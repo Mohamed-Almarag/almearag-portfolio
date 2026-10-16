@@ -18,12 +18,20 @@ export const products: Product[] = [
       "Open-source GitHub Action that checks translation files on every pull request for vue-i18n, Nuxt, next-intl, react-intl, and i18next, reporting missing keys, broken placeholders, plural-form gaps, and untranslated text in one sticky comment with inline annotations; runs in CI on production projects.",
       "Parses vue-i18n and ICU messages into an AST with their official parsers instead of regex, and fails only on the issues a pull request introduces, or reports all existing ones on every pull request or on a schedule; runs safely on forks and is covered by 223 tests.",
       [
-        "Used it on open-source projects: a ",
+        "Used it on open-webui/open-webui (155k stars): a ",
+        {
+          label: "merged PR",
+          href: "https://github.com/open-webui/open-webui/pull/32501",
+        },
+        " restored placeholder names in 24 strings across 10 locales that showed raw placeholders instead of values.",
+      ],
+      [
+        "Used it on lissy93/dashy (26k stars): a ",
         {
           label: "merged PR",
           href: "https://github.com/lissy93/dashy/pull/2394",
         },
-        " to lissy93/dashy (26k stars) fixed 3 Hindi messages failing at runtime that the project's CI missed, and completed its Arabic translation (63% to 100%); credited in the project's ",
+        " fixed 3 Hindi messages failing at runtime that the project's CI missed, and completed its Arabic translation (63% to 100%); credited in the project's ",
         {
           label: "README",
           href: "https://github.com/lissy93/dashy#supported-languages",
