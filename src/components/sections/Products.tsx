@@ -2,21 +2,9 @@ import { ExternalLink } from "@/components/ui/ExternalLink";
 import { Icon } from "@/components/ui/Icon";
 import { AppSection } from "@/components/ui/AppSection";
 import { products } from "@/content/products";
-import type { Highlight } from "@/content/types";
 
 const linkClass =
   "text-foreground hover:text-accent inline-flex items-center gap-1 underline decoration-border underline-offset-4 transition-colors";
-
-const inlineLinkClass =
-  "text-foreground hover:text-accent underline decoration-border underline-offset-4 transition-colors";
-
-function highlightText(highlight: Highlight) {
-  return typeof highlight === "string"
-    ? highlight
-    : highlight
-        .map((part) => (typeof part === "string" ? part : part.label))
-        .join("");
-}
 
 export function Products() {
   return (
@@ -44,23 +32,7 @@ export function Products() {
             </p>
             <ul className="mt-4 list-disc space-y-2 pl-5 leading-relaxed text-muted marker:text-accent">
               {product.highlights.map((highlight) => (
-                <li key={highlightText(highlight)}>
-                  {typeof highlight === "string"
-                    ? highlight
-                    : highlight.map((part) =>
-                        typeof part === "string" ? (
-                          part
-                        ) : (
-                          <ExternalLink
-                            key={part.href}
-                            href={part.href}
-                            className={inlineLinkClass}
-                          >
-                            {part.label}
-                          </ExternalLink>
-                        ),
-                      )}
-                </li>
+                <li key={highlight}>{highlight}</li>
               ))}
             </ul>
           </article>

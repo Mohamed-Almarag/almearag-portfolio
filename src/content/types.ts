@@ -18,7 +18,14 @@ export type Product = {
   name: string;
   stack: string[];
   links: Link[];
-  highlights: Highlight[];
+  highlights: string[];
+};
+
+export type Contribution = {
+  repo: string;
+  stars: string;
+  summary: Highlight;
+  pr: Link;
 };
 
 export type SkillGroup = {
