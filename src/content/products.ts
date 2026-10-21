@@ -3,7 +3,7 @@ import type { Product } from "./types";
 export const products: Product[] = [
   {
     name: "Locale Guard",
-    stack: ["TypeScript", "GitHub Actions"],
+    stack: ["TypeScript", "GitHub Actions", "npm"],
     links: [
       {
         label: "GitHub",
@@ -13,10 +13,14 @@ export const products: Product[] = [
         label: "Marketplace",
         href: "https://github.com/marketplace/actions/locale-guard",
       },
+      {
+        label: "npm",
+        href: "https://www.npmjs.com/package/locale-guard-cli",
+      },
     ],
     highlights: [
-      "Open-source GitHub Action that checks translation files on every pull request for vue-i18n, Nuxt, next-intl, react-intl, and i18next, reporting missing keys, broken placeholders, plural-form gaps, and untranslated text in one sticky comment with inline annotations.",
-      "Parses vue-i18n and ICU messages into an AST with their official parsers instead of regex, and fails only on the issues a pull request introduces, or reports all existing ones on every pull request or on a schedule. Runs safely on forks and is covered by 223 tests.",
+      "Open-source GitHub Action and npm CLI that checks translation files in pull requests and git hooks for vue-i18n, Nuxt, next-intl, react-intl, i18next, and Rails. On pull requests, it reports missing keys, broken placeholders, plural-form gaps, and untranslated text in one sticky comment with inline annotations.",
+      "Parses vue-i18n and ICU messages into an AST with their official parsers instead of regex, and fails only on the issues a pull request introduces, or reports all existing ones on every pull request or on a schedule. Runs safely on forks and is covered by 300+ tests.",
       "Runs in CI on production projects, and found the translation bugs fixed in the open-source contributions below, all merged by the projects' maintainers.",
     ],
   },
