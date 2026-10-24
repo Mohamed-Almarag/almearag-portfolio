@@ -9,23 +9,26 @@ export type Role = {
   location: string;
   period: string;
   products?: string[];
-  highlights: string[];
+  highlights: Highlight[];
 };
 
-export type Highlight = string | (string | Link)[];
+// Text shown in bold, matching the bold phrases in the CV
+export type Bold = { bold: string | Link };
+
+export type Highlight = string | (string | Link | Bold)[];
 
 export type Product = {
   name: string;
   stack: string[];
   links: Link[];
-  highlights: string[];
+  highlights: Highlight[];
 };
 
 export type Contribution = {
   repo: string;
   stars: string;
   summary: Highlight;
-  pr: Link;
+  prs: Link[];
 };
 
 export type SkillGroup = {
