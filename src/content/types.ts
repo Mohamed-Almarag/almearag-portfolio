@@ -9,13 +9,10 @@ export type Role = {
   location: string;
   period: string;
   products?: string[];
-  highlights: Highlight[];
+  highlights: string[];
 };
 
-// Text shown in bold, matching the bold phrases in the CV
-export type Bold = { bold: string | Link };
-
-export type Highlight = string | (string | Link | Bold)[];
+export type Highlight = string | (string | Link)[];
 
 export type Product = {
   name: string;
