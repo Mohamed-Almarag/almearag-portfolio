@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { AppSection } from "@/components/ui/AppSection";
 import { ExternalLink } from "@/components/ui/ExternalLink";
-import { RichText, boldClass, textLinkClass } from "@/components/ui/RichText";
+import { RichText, textLinkClass } from "@/components/ui/RichText";
 import { contributions } from "@/content/contributions";
 
 export function Contributions() {
@@ -11,9 +11,7 @@ export function Contributions() {
         {contributions.map(({ repo, stars, summary, prs }) => (
           <li key={repo}>
             <span className="font-medium text-foreground">{repo}</span>
-            {" ("}
-            <strong className={boldClass}>{stars}</strong>
-            {"): "}
+            {` (${stars}): `}
             <RichText value={summary} />
             {prs.length > 1 ? " PRs: " : " PR: "}
             {prs.map((pr, i) => (

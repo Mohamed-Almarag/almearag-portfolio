@@ -4,11 +4,8 @@ export const contributions: Contribution[] = [
   {
     repo: "open-webui/open-webui",
     stars: "155k stars",
-    summary: [
-      "fixed broken placeholders in ",
-      { bold: "30 strings across 13 locales" },
-      " that showed raw placeholders or broken text instead of values, in two PRs merged by the project's creator.",
-    ],
+    summary:
+      "fixed broken placeholders in 30 strings across 13 locales that showed raw placeholders or broken text instead of values, in two PRs merged by the project's creator.",
     prs: [
       {
         label: "github.com/open-webui/open-webui/pull/32501",
@@ -24,11 +21,7 @@ export const contributions: Contribution[] = [
     repo: "lissy93/dashy",
     stars: "26k stars",
     summary: [
-      "fixed ",
-      { bold: "3 Hindi messages" },
-      " failing at runtime that the project's CI missed, and completed its Arabic translation (",
-      { bold: "63% to 100%" },
-      "). Credited in the project's ",
+      "fixed 3 Hindi messages failing at runtime that the project's CI missed, and completed its Arabic translation (63% to 100%). Credited in the project's ",
       {
         label: "README",
         href: "https://github.com/lissy93/dashy#supported-languages",
@@ -45,11 +38,8 @@ export const contributions: Contribution[] = [
   {
     repo: "knadh/listmonk",
     stars: "23k stars",
-    summary: [
-      "restored placeholders in ",
-      { bold: "5 Arabic messages" },
-      " that dropped them, so confirmations like a deleted campaign showed without its name.",
-    ],
+    summary:
+      "restored placeholders in 5 Arabic messages that dropped them, so confirmations like a deleted campaign showed without its name.",
     prs: [
       {
         label: "github.com/knadh/listmonk/pull/3281",

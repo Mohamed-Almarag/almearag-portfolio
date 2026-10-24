@@ -24,10 +24,8 @@ export const products: Product[] = [
       [
         "Listed in the ",
         {
-          bold: {
-            label: "official i18next documentation",
-            href: "https://www.i18next.com/overview/plugins-and-utils#utils",
-          },
+          label: "official i18next documentation",
+          href: "https://www.i18next.com/overview/plugins-and-utils#utils",
         },
         ". Runs in CI on production projects, and found the translation bugs fixed in the open-source contributions below, all merged by the projects' maintainers.",
       ],
@@ -41,17 +39,8 @@ export const products: Product[] = [
       { label: "Docs", href: "https://smart-admin-panel-docs.vercel.app" },
     ],
     highlights: [
-      [
-        "A commercial ",
-        { bold: "schema-driven" },
-        " admin template built with Vue 3, Vite, strict TypeScript, Pinia, Tailwind, and shadcn-vue, covering 40+ CRUD modules with data tables, filtering, import/export, bulk actions, and ECharts dashboards.",
-      ],
-      [
-        {
-          bold: "Built a CLI that scaffolds modules and forms from a real API contract",
-        },
-        " instead of mock data, generating types, Zod schemas, accessible forms, and translations.",
-      ],
+      "A commercial schema-driven admin template built with Vue 3, Vite, strict TypeScript, Pinia, Tailwind, and shadcn-vue, covering 40+ CRUD modules with data tables, filtering, import/export, bulk actions, and ECharts dashboards.",
+      "Built a CLI that scaffolds modules and forms from a real API contract instead of mock data, generating types, Zod schemas, accessible forms, and translations.",
       "Implemented 9-language i18n with full RTL, CASL-based RBAC, token-driven theming, and hosted documentation.",
     ],
   },
