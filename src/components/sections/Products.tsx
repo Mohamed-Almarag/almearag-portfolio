@@ -1,7 +1,9 @@
 import { ExternalLink } from "@/components/ui/ExternalLink";
 import { Icon } from "@/components/ui/Icon";
 import { AppSection } from "@/components/ui/AppSection";
+import { RichText } from "@/components/ui/RichText";
 import { products } from "@/content/products";
+import { highlightText } from "@/lib/highlight";
 
 const linkClass =
   "text-foreground hover:text-accent inline-flex items-center gap-1 underline decoration-border underline-offset-4 transition-colors";
@@ -32,7 +34,9 @@ export function Products() {
             </p>
             <ul className="mt-4 list-disc space-y-2 pl-5 leading-relaxed text-muted marker:text-accent">
               {product.highlights.map((highlight) => (
-                <li key={highlight}>{highlight}</li>
+                <li key={highlightText(highlight)}>
+                  <RichText value={highlight} />
+                </li>
               ))}
             </ul>
           </article>

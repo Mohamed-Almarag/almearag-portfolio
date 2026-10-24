@@ -1,4 +1,4 @@
-import type { Link } from "./types";
+import type { Highlight, Link } from "./types";
 
 type Profile = {
   name: string;
@@ -10,7 +10,7 @@ type Profile = {
   github: Link;
   whatsapp: string;
   cv: string;
-  summary: string;
+  summary: Highlight;
 };
 
 export const profile: Profile = {
@@ -29,6 +29,9 @@ export const profile: Profile = {
   },
   whatsapp: "https://wa.me/201064911906",
   cv: "/Mohamed-Almearag-Senior-Frontend-Engineer.pdf",
-  summary:
-    "Senior Frontend Engineer with 5+ years of experience building scalable, SSR-driven web applications, specializing in Vue.js and Nuxt.js and shipping production React and Next.js applications. Delivered bidding and tender systems, freelancing marketplaces, e-learning, and healthcare platforms, including multilingual RTL interfaces, real-time features, live-streaming, and payment gateway integrations. Strong focus on performance, Core Web Vitals, accessibility, security, clean code, and scalable architecture, using AI-assisted development workflows (Claude, Cursor, Codex) to accelerate refactors and migrations, automate code reviews, and ship complex modules faster without sacrificing code quality. Author of Locale Guard, an open-source GitHub Action and npm CLI that catches translation bugs before they reach users. Its findings led to fixes merged into Open WebUI, dashy, and listmonk.",
+  summary: [
+    "Senior Frontend Engineer with 5+ years of experience building scalable, SSR-driven web applications, specializing in Vue.js and Nuxt.js and shipping production React and Next.js applications. Delivered bidding and tender systems, freelancing marketplaces, e-learning, and healthcare platforms, including multilingual RTL interfaces, real-time features, live-streaming, and payment gateway integrations. Strong focus on performance, Core Web Vitals, accessibility, security, clean code, and scalable architecture, using AI-assisted development workflows (Claude, Cursor, Codex) to accelerate refactors and migrations, automate code reviews, and ship complex modules faster without sacrificing code quality. Author of ",
+    { bold: "Locale Guard, listed in the official i18next documentation" },
+    ": an open-source GitHub Action and npm CLI that catches translation bugs before they reach users. Its findings led to fixes merged into Open WebUI, dashy, and listmonk.",
+  ],
 };

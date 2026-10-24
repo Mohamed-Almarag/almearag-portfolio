@@ -1,15 +1,15 @@
 import type { IconName } from "@/components/ui/Icon";
 import { profile } from "@/content/profile";
 import { sections } from "@/content/sections";
+import { highlightText } from "@/lib/highlight";
 
 export const siteUrl = "https://almearag-portfolio.vercel.app";
 
 export const siteTitle = `${profile.name} | ${profile.title}`;
 
-export const siteDescription = profile.summary.slice(
-  0,
-  profile.summary.indexOf(". ") + 1,
-);
+const summary = highlightText(profile.summary);
+
+export const siteDescription = summary.slice(0, summary.indexOf(". ") + 1);
 
 const [city, country] = profile.location.split(", ");
 

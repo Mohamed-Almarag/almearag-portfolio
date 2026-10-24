@@ -1,4 +1,6 @@
+import { RichText } from "@/components/ui/RichText";
 import type { Role } from "@/content/types";
+import { highlightText } from "@/lib/highlight";
 
 export function RoleEntry({ role }: { role: Role }) {
   return (
@@ -18,7 +20,9 @@ export function RoleEntry({ role }: { role: Role }) {
       )}
       <ul className="mt-4 list-disc space-y-2 pl-5 leading-relaxed text-muted marker:text-accent">
         {role.highlights.map((highlight) => (
-          <li key={highlight}>{highlight}</li>
+          <li key={highlightText(highlight)}>
+            <RichText value={highlight} />
+          </li>
         ))}
       </ul>
     </article>
