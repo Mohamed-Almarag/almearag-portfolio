@@ -26,7 +26,12 @@ export const contributions: Contribution[] = [
         label: "README",
         href: "https://github.com/lissy93/dashy#supported-languages",
       },
-      ".",
+      ". Also ",
+      {
+        label: "reported a bug",
+        href: "https://github.com/lissy93/dashy/issues/2410",
+      },
+      " in its Nextcloud widgets that the project's creator fixed in the code across 19 locales.",
     ],
     prs: [
       {
