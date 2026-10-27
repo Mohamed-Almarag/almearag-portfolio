@@ -1,12 +1,11 @@
 import { ExternalLink } from "@/components/ui/ExternalLink";
 import { Icon } from "@/components/ui/Icon";
 import { AppSection } from "@/components/ui/AppSection";
-import { RichText } from "@/components/ui/RichText";
+import { RichText, textLinkClass } from "@/components/ui/RichText";
 import { products } from "@/content/products";
 import { highlightText } from "@/lib/highlight";
 
-const linkClass =
-  "text-foreground hover:text-accent inline-flex items-center gap-1 underline decoration-border underline-offset-4 transition-colors";
+const linkClass = `${textLinkClass} inline-flex items-center gap-1`;
 
 export function Products() {
   return (
