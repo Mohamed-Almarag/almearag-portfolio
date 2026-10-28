@@ -26,6 +26,11 @@ export type Contribution = {
   stars: string;
   summary: Highlight;
   prs: Link[];
+  credit?: Highlight;
+  report?: {
+    text: string;
+    links: Link[];
+  };
 };
 
 export type SkillGroup = {
