@@ -55,6 +55,7 @@ src/
 ## Content
 
 - The CV is the only source of truth. Copy it verbatim: no rewording, no additions, no omissions.
+- Links on the site show a short label, never the full URL. Full URLs are only in the CV, for ATS.
 - The phone number appears only inside the WhatsApp link, never as visible text.
 - American spelling. No em dashes.
 
