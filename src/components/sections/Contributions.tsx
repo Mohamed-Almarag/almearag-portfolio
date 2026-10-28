@@ -10,7 +10,12 @@ export function Contributions() {
       <ul className="list-disc space-y-2 pl-5 leading-relaxed text-muted marker:text-accent">
         {contributions.map(({ repo, stars, summary, prs }) => (
           <li key={repo}>
-            <span className="font-medium text-foreground">{repo}</span>
+            <ExternalLink
+              href={`https://github.com/${repo}`}
+              className={`${textLinkClass} font-medium`}
+            >
+              {repo}
+            </ExternalLink>
             {` (${stars}): `}
             <RichText value={summary} />
             {prs.length > 1 ? " PRs: " : " PR: "}

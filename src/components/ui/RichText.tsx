@@ -2,7 +2,7 @@ import { ExternalLink } from "@/components/ui/ExternalLink";
 import type { Highlight, Link } from "@/content/types";
 
 export const textLinkClass =
-  "text-foreground hover:text-accent underline decoration-border underline-offset-4 transition-colors";
+  "text-accent hover:text-foreground underline decoration-accent/40 underline-offset-4 transition-colors";
 
 function TextLink({ link }: { link: Link }) {
   return (
