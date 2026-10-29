@@ -17,6 +17,8 @@ export type Highlight = string | (string | Link)[];
 export type Product = {
   name: string;
   stack: string[];
+  // Company projects: the CV shows only this framework, the site the full stack
+  mainStack?: string;
   links: Link[];
   highlights: Highlight[];
 };
