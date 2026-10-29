@@ -49,4 +49,75 @@ export const products: Product[] = [
       "Implemented 9-language i18n with full RTL, CASL-based RBAC, token-driven theming, and hosted documentation.",
     ],
   },
+  {
+    name: "Doworkss",
+    stack: [
+      "Nuxt.js",
+      "Vue.js",
+      "Vuetify",
+      "Pinia",
+      "Pusher",
+      "Firebase FCM",
+      "Tap Payments",
+    ],
+    mainStack: "Nuxt.js",
+    links: [{ label: "doworkss.com", href: "https://www.doworkss.com/" }],
+    highlights: [
+      "Freelancing and micro-services marketplace with real-time chat, push notifications, and wallet payments, server-rendered for fast loads and SEO, in 6 languages including RTL.",
+    ],
+  },
+  {
+    name: "Rivals",
+    stack: [
+      "Nuxt.js",
+      "Vue.js",
+      "Tailwind CSS",
+      "Pinia",
+      "WebRTC",
+      "Pusher",
+      "Firebase FCM",
+      "Tap Payments",
+    ],
+    mainStack: "Nuxt.js",
+    links: [
+      { label: "rivals.mazaady.com", href: "https://rivals.mazaady.com/" },
+    ],
+    highlights: [
+      "Auctions and tenders platform with WebRTC live streaming, real-time updates, and push notifications, server-rendered for fast loads and SEO, in 4 languages including RTL.",
+    ],
+  },
+  {
+    name: "Mazaady",
+    stack: [
+      "Next.js (App Router)",
+      "React",
+      "TanStack Query",
+      "Zustand",
+      "WebRTC",
+      "Pusher",
+      "Firebase FCM",
+      "Tap Payments",
+    ],
+    mainStack: "Next.js",
+    links: [{ label: "mazaady.com", href: "https://www.mazaady.com/" }],
+    highlights: [
+      "Online marketplace with WebRTC live-stream selling, real-time chat, push notifications, and wallet payments, server-rendered for fast loads and SEO, in 4 languages including RTL.",
+    ],
+  },
+  {
+    name: "JobSeek",
+    stack: [
+      "Next.js (App Router)",
+      "React",
+      "TanStack Query",
+      "Zustand",
+      "Pusher",
+      "Firebase FCM",
+    ],
+    mainStack: "Next.js",
+    links: [{ label: "jobseekk.com", href: "https://www.jobseekk.com/" }],
+    highlights: [
+      "Professional network to find job opportunities, with real-time chat and push notifications, server-rendered for fast loads and SEO, with multilingual RTL support.",
+    ],
+  },
 ];
